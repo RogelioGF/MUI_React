@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Boton from "./component/Boton";
+import "fontsource-roboto";
+import {Typography} from "@material-ui/core";
+import {Component} from "react";
+import Inputs from "./component/CampoTexto";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+    render() {
+        return (
+            <div className="App">
+                <header className="App-header">
+                    <Typography variant="h5" component="h5">
+                        h5. Heading <br/>
+                        <p>render typography</p>
+                        <Inputs/>
+                    </Typography>
+                    <Boton/>
+                </header>
+            </div>
+        );
+    }
 }
 
 export default App;
