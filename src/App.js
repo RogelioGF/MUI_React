@@ -1,9 +1,9 @@
 import './App.css';
-import Boton from "./component/Boton";
 import "fontsource-roboto";
 import {Typography} from "@material-ui/core";
 import {Component} from "react";
 import Inputs from "./component/CampoTexto";
+import Modal from "./component/Mostrar_ocultar";
 
 class App extends Component {
     render() {
@@ -14,8 +14,8 @@ class App extends Component {
                         h5. Heading <br/>
                         <p>render typography</p>
                         <Inputs/>
+                        <Modal/>
                     </Typography>
-                    <Boton/>
                 </header>
             </div>
         );
